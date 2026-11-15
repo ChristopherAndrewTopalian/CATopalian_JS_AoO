@@ -3,56 +3,8 @@
 ---
 
 <details>
-<summary><b>Section: find</b></summary>
+<summary><b>Section: filter</b></summary>
 
-
-### `find_by_first_name_returns_object.js`
-
-```javascript
-// find_by_first_name_returns_object.js
-
-let people = [
-    {
-        first_name: 'Jane',
-        last_name: 'Lane',
-        score: 98
-    },
-
-    {
-        first_name: 'Joan',
-        last_name: 'Evans',
-        score: 93
-    }
-];
-
-// Look through the people array, and find the person whose first_name is Jane.
-let jane = people.find(function(person)
-{
-    return person.first_name === 'Jane';
-});
-
-console.log(jane);
-
-/*
-Object { first_name: "Jane", last_name: "Lane", score: 98 }
-
-first_name: "Jane"
-
-last_name: "Lane"
-
-score: 98
-
-<prototype>: Object { … }
-*/
-
-//----//
-
-// Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
-// https://github.com/ChristopherTopalian
-// https://github.com/ChristopherAndrewTopalian
-// https://sites.google.com/view/CollegeOfScripting
-```
 
 ### `for_if_first_name_return_array_show_object.js`
 
@@ -93,62 +45,6 @@ first_name: "Jane"
 last_name: "Lane"
 
 score: 98
-*/
-
-//----//
-
-// Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
-// https://github.com/ChristopherTopalian
-// https://github.com/ChristopherAndrewTopalian
-// https://sites.google.com/view/CollegeOfScripting
-```
-
-### `for_if_first_name_return_object_break_.js`
-
-```javascript
-// for_if_first_name_return_object_break_.js
-
-let people = [
-    {
-        first_name: 'Jane',
-        last_name: 'Lane',
-        score: 98
-    },
-
-    {
-        first_name: 'Joan',
-        last_name: 'Evans',
-        score: 93
-    }
-];
-
-let result = null;
-
-for (let i = 0; i < people.length; i++)
-{
-    if (people[i].first_name === 'Jane')
-    {
-        result = people[i];
-        break; // Stops the loop immediately, saving CPU cycles
-    }
-}
-
-console.log(result);
-
-//----//
-
-
-/*
-Object { first_name: "Jane", last_name: "Lane", score: 98 }
-
-first_name: "Jane"
-
-last_name: "Lane"
-
-score: 98
-
-<prototype>: Object { … }
 */
 
 //----//
@@ -223,6 +119,119 @@ score: 87
 length: 2
 
 <prototype>: Array []
+*/
+
+//----//
+
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
+```
+
+
+</details>
+
+---
+
+<details>
+<summary><b>Section: find</b></summary>
+
+
+### `find_by_first_name_returns_object.js`
+
+```javascript
+// find_by_first_name_returns_object.js
+
+let people = [
+    {
+        first_name: 'Jane',
+        last_name: 'Lane',
+        score: 98
+    },
+
+    {
+        first_name: 'Joan',
+        last_name: 'Evans',
+        score: 93
+    }
+];
+
+// Look through the people array, and find the person whose first_name is Jane.
+let jane = people.find(function(person)
+{
+    return person.first_name === 'Jane';
+});
+
+console.log(jane);
+
+/*
+Object { first_name: "Jane", last_name: "Lane", score: 98 }
+
+first_name: "Jane"
+
+last_name: "Lane"
+
+score: 98
+
+<prototype>: Object { … }
+*/
+
+//----//
+
+// Dedicated to God the Father
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
+// https://github.com/ChristopherTopalian
+// https://github.com/ChristopherAndrewTopalian
+// https://sites.google.com/view/CollegeOfScripting
+```
+
+### `for_if_first_name_return_object_break_.js`
+
+```javascript
+// for_if_first_name_return_object_break_.js
+
+let people = [
+    {
+        first_name: 'Jane',
+        last_name: 'Lane',
+        score: 98
+    },
+
+    {
+        first_name: 'Joan',
+        last_name: 'Evans',
+        score: 93
+    }
+];
+
+let result = null;
+
+for (let i = 0; i < people.length; i++)
+{
+    if (people[i].first_name === 'Jane')
+    {
+        result = people[i];
+        break; // Stops the loop immediately, saving CPU cycles
+    }
+}
+
+console.log(result);
+
+//----//
+
+
+/*
+Object { first_name: "Jane", last_name: "Lane", score: 98 }
+
+first_name: "Jane"
+
+last_name: "Lane"
+
+score: 98
+
+<prototype>: Object { … }
 */
 
 //----//
