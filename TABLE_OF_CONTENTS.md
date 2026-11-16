@@ -4,6 +4,8 @@
 
 ### filter
 
+* [filterByLastName.js](src/tutorials/filter/filterByLastName.js)
+
 * [for_if_first_name_return_array_show_object.js](src/tutorials/filter/for_if_first_name_return_array_show_object.js)
 
 * [for_if_last_name_return_aoo.js](src/tutorials/filter/for_if_last_name_return_aoo.js)
